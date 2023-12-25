@@ -2,7 +2,7 @@ import sys
 
 import gradio as gr
 
-from modules import shared_cmd_options, shared_gradio_themes, options, shared_items, sd_models_types
+from modules import shared_cmd_options, shared_gradio_themes, options, shared_items
 from modules.paths_internal import models_path, script_path, data_path, sd_configs_path, sd_default_config, sd_model_file, default_sd_model_file, extensions_dir, extensions_builtin_dir  # noqa: F401
 from modules import util
 
@@ -39,7 +39,6 @@ options_templates = None
 opts = None
 restricted_opts = None
 
-sd_model: sd_models_types.WebuiSdModel = None
 
 settings_components = None
 """assinged from ui.py, a mapping on setting names to gradio components repsponsible for those settings"""
@@ -78,10 +77,3 @@ html_path = util.html_path
 html = util.html
 walk_files = util.walk_files
 ldm_print = util.ldm_print
-
-reload_gradio_theme = shared_gradio_themes.reload_gradio_theme
-
-list_checkpoint_tiles = shared_items.list_checkpoint_tiles
-refresh_checkpoints = shared_items.refresh_checkpoints
-list_samplers = shared_items.list_samplers
-reload_hypernetworks = shared_items.reload_hypernetworks

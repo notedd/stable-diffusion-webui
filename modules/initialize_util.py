@@ -6,7 +6,6 @@ import re
 
 from modules.timer import startup_timer
 
-
 def gradio_server_name():
     from modules.shared_cmd_options import cmd_opts
 

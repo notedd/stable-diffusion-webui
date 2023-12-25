@@ -1,7 +1,6 @@
 import time
 import argparse
 
-
 class TimerSubcategory:
     def __init__(self, timer, category):
         self.timer = timer

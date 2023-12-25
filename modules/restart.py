@@ -3,7 +3,6 @@ from pathlib import Path
 
 from modules.paths_internal import script_path
 
-
 def is_restartable() -> bool:
     """
     Return True if the webui is restartable (i.e. there is something watching to restart it with)
